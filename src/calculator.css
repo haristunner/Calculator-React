@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto, san-serif";
 }
 
 .calculator {
@@ -14,10 +15,11 @@
 
 .all {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
   background-color: rgb(37, 37, 37);
-  row-gap: 9px;
-  column-gap: 18px;
+  row-gap: 5px;
+  column-gap: 10px;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 1px 1px 8px rgb(100, 100, 100);
@@ -37,6 +39,10 @@
 .screen {
   grid-column-start: 1;
   grid-column-end: 5;
+  overflow: hidden;
+  font-size: 3rem;
+  color: white;
+  text-align: end;
 }
 
 .first {
